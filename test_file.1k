@@ -1,0 +1,39 @@
+def fibonacci[n]/
+    if[[n less 1] or [n == 1]]/
+        fibonacci = n
+    \
+    else/
+        fibonacci = fibonacci[n minus 1] plus fibonacci[n minus 2]
+    \
+\
+
+print[fibonacci[10]]
+
+def factorial[n]/
+    if[n == 0]/
+        factorial = 0
+    \
+    if[n == 1]/
+        factorial = 1
+    \
+    if[n greater 1]/
+        factorial = factorial[n minus 1] times n
+    \
+\
+
+print[factorial[10]]
+
+def mult3[n]/
+    if[n == 1]/
+        mult3 = 3
+    \
+    else/
+        mult3 = mult3[n minus 1] plus 3
+    \
+\
+
+x = 1
+while[x less 10]/
+    print[mult3[x]]
+    x = x plus 1
+\
