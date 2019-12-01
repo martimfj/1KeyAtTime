@@ -54,7 +54,7 @@ while[x less 10]/
 
   - `def_args: identifier, { ",", identifier };`
 
-`rel_exp: expression, ("==" | "bigger than" | "less than"), expression;`
+`rel_exp: expression, ("==" | "bigger" | "less"), expression;`
 
 `expression: term, { ("plus" | "minus" | "or"), term };`
 
