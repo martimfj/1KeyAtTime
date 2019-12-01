@@ -1,7 +1,7 @@
 # 1 Key At Time
 
 ## Introdução
-Este projeto tem como objetivo implementar uma linguagem de programação para deficientes físicos, que têm o movimento dos dedos da mão restrito. A proposta dessa linguagem de programação é possibilitar que o usuário programe sem ter que pressionar mais de uma tecla por vez. Portanto, a linguagem não contém nenhum caracter especial que necessite pressionar `Shift`. 
+Este projeto tem como objetivo implementar uma linguagem de programação para deficientes físicos, que têm o movimento dos dedos da mão restrito. A proposta dessa linguagem de programação é possibilitar que o usuário programe sem ter que pressionar mais de uma tecla por vez. Portanto, a linguagem não contém nenhum caractere especial que necessite pressionar `Shift`. 
 
 **Obs1:** Os caracteres `/` `*` `-` `+` são presentes no *Numeric keypad* sem a necessidade de pressionar `Shift`, porém como não são todos os teclados que o tem, as opereções correspondentes foram implementadas de outra maneira. Além de ser distânte do restante do teclado, o que implicaria na queda do *Keystrokes per minute*.
 
@@ -15,8 +15,9 @@ A linguagem foi inspirada em python, com a adição de / \ para delimitar os blo
 - else/  \
 - while[x < 100]/  \
 - print[x]
-- def function(arg1, arg2) /  \
+- def function[arg1, arg2] /  \
 - plus, minus, times, divide, and, or, ==, greater, less, not
+- #define N 10
 
 ## Exemplo
 ```
