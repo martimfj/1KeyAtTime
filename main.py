@@ -27,10 +27,19 @@ def main():
 def run(file):
     # Pre Processing + \n para determinar EOF
     code = re.sub("[/]{2,}.*", "", file) + "\n"
+    defines = [x.split() for x in re.findall("#define.*", code)]
+    filtered = re.sub("(#define.*)\n", " ", code)
+    for define in defines:
+        name = define[1:2][0]
+        list_value = define[2:]
+        value = ""
+        for i in list_value:
+            value += i
+        filtered = re.sub(f"({name})", f"{value}", filtered)
 
     # Lexer
     lexer = Lexer().createLexer()
-    tokens = lexer.lex(code)
+    tokens = lexer.lex(filtered)
 
     # Symbol Table
     st = SymbolTable(None)

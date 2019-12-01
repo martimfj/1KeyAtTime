@@ -1,3 +1,5 @@
+#define N 10
+#define M 5
 def fibonacci[n]/
     if[[n less 1] or [n == 1]]/
         fibonacci = n
@@ -7,7 +9,7 @@ def fibonacci[n]/
     \
 \
 
-print[fibonacci[10]]
+print[fibonacci[N]]
 
 def factorial[n]/
     if[n == 0]/
@@ -21,7 +23,7 @@ def factorial[n]/
     \
 \
 
-print[factorial[10]]
+print[factorial[M]]
 
 def mult3[n]/
     if[n == 1]/
@@ -33,7 +35,7 @@ def mult3[n]/
 \
 
 x = 1
-while[x less 10]/
+while[x less N]/
     print[mult3[x]]
     x = x plus 1
 \
